@@ -127,3 +127,6 @@ python bank_loan_analysis.py
 - `Bank_Loan_Analysis.ipynb` - Full analysis with code and visualizations
 - `bank_loan_analysis.py` - Python script version
 - `financial_loan_data_excel.xlsx` - Data file
+
+## Google Colab
+[Open in Google Colab](https://colab.research.google.com/drive/1TegQqE_QVqAdqqRulCtQ1DLoibpI202O?usp=sharing)
