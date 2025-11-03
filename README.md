@@ -1,8 +1,14 @@
-# Bank Loan Analysis
+# Bank Loan Analysis Report
 
 ## Goal
 
-Analyzed 38,576 bank loans to understand portfolio health, identify trends, and find key insights about lending patterns and customer behavior. **86.2% of loans are performing well**, indicating a strong but monitored portfolio.
+Create a comprehensive Bank Loan Report to monitor and assess lending activities. The report provides data-driven insights into portfolio health, identifies trends, and enables strategic decision-making. This analysis covers three dashboard areas: Summary (KPIs), Overview (Charts), and Details.
+
+---
+
+## Problem Statement
+
+**Objective:** Track and analyze 38,576 bank loans to understand portfolio performance, identify lending trends, and assess loan quality through systematic analysis of key performance indicators, geographic patterns, and customer segments.
 
 ---
 
@@ -11,6 +17,26 @@ Analyzed 38,576 bank loans to understand portfolio health, identify trends, and 
 - **Size**: 38,576 loans across 50 US states
 - **Period**: Full year 2021 (Jan 1 - Dec 12)
 - **Source**: financial_loan_data_excel.xlsx
+- **Tracking**: Month-to-Date (MTD) and Month-over-Month (MoM) metrics
+
+---
+
+## KPI Requirements
+
+### Core Metrics
+- **Total Loan Applications**: 38,576 (with MTD & MoM tracking)
+- **Total Funded Amount**: $435.8M (with MTD & MoM tracking)
+- **Total Amount Received**: $473.1M (with MTD & MoM tracking)
+- **Average Interest Rate**: 12.05%
+- **Average DTI**: 13.3%
+
+### Good Loan vs Bad Loan KPIs
+| Metric | Good Loans | Bad Loans |
+|--------|-----------|-----------|
+| Applications | 33,243 (86.2%) | 5,333 (13.8%) |
+| Funded Amount | $380.0M+ | $55.0M+ |
+| Total Received | $415.0M+ | $58.0M+ |
+| Status | Fully Paid + Current | Charged Off |
 
 ---
 
@@ -52,31 +78,42 @@ Analyzed 38,576 bank loans to understand portfolio health, identify trends, and 
 
 ---
 
-## Visualizations (8 Charts)
+## Dashboards
 
-1. Monthly funding trend
+### Dashboard 1: Summary (KPIs)
+- Portfolio health metrics (Good vs Bad loans)
+- Performance tracking (MTD, MoM trends)
+- Loan Status Grid View by status category
+
+### Dashboard 2: Overview (Charts)
+Visualizations showing trends and distribution:
+
+1. Monthly Trends by Issue Date
    ![Total_Funded_Amount_by_Month.png](./outputs/Total_Funded_Amount_by_Month.png)
 
-2. Monthly collections trend
+2. Monthly Collections Trend
    ![Total_Payment_Amount_by_Month.png](./outputs/Total_Payment_Amount_by_Month.png)
 
-3. Monthly applications trend
+3. Monthly Applications Trend
    ![Total_Loan_Applications_by_Month.png](./outputs/Total_Loan_Applications_by_Month.png)
 
-4. States ranked by funded amount
+4. Regional Analysis by State
    ![Total_Funded_Amount_by_State.png](./outputs/Total_Funded_Amount_by_State.png)
 
-5. Loan term comparison by repayment
+5. Loan Term Analysis
    ![Total_Amount_Recieved.png](./outputs/Total_Amount_Recieved.png)
 
-6. Home ownership by repayment
+6. Employee Length Analysis
+   ![Total_Loan_Applications.png](./outputs/Total_Loan_Applications.png)
+
+7. Home Ownership Analysis
    ![Home_Ownership_by_Total_Amount_Recieved.png](./outputs/Home_Ownership_by_Total_Amount_Recieved.png)
 
-7. Total funded amount (summary)
+8. Total Funded Amount (Summary)
    ![Total_Funded_Amount.png](./outputs/Total_Funded_Amount.png)
 
-8. Total loan applications (summary)
-   ![Total_Loan_Applications.png](./outputs/Total_Loan_Applications.png)
+### Dashboard 3: Details
+Comprehensive details dashboard with consolidated loan data view
 
 ---
 
@@ -128,5 +165,8 @@ python bank_loan_analysis.py
 - `bank_loan_analysis.py` - Python script version
 - `financial_loan_data_excel.xlsx` - Data file
 
+---
+
 ## Google Colab
+
 [Open in Google Colab](https://colab.research.google.com/drive/1TegQqE_QVqAdqqRulCtQ1DLoibpI202O?usp=sharing)
