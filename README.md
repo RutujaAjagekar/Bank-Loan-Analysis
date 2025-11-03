@@ -27,13 +27,13 @@ Analyzed 38,576 bank loans to understand portfolio health, identify trends, and 
 - **47.1%** of all loans are for debt consolidation (18,214 loans)
 - Credit card payoff is second at 13%
 - **Average Loan Size**: $11,296 | **Average DTI**: 13.3%
-- **Insight**: Consolidation is the main product—people want to reduce existing debt
+- **Insight**: Consolidation is the main product people want to reduce existing debt
 
 ### 3. Monthly Trends Are Steady
 - Funding, collections, and applications stay consistent each month
 - No major seasonal spikes
 - **Loan Terms**: 73% are 36-month, 27% are 60-month
-- **Insight**: Predictable business—good for forecasting
+- **Insight**: Predictable business good for forecasting
 
 ### 4. Geographic Concentration
 - States vary widely in lending volume
